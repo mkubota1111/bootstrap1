@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>Online Dive Log Entry</title>
+  <link href="css/style.css" rel="stylesheet" />
 </head>
 <body>
   <h4>
@@ -9,29 +10,28 @@
   </h4>
   <form>
     <label for="divesite">Dive site:</label>
-    <input type="text" id="divesite" value=""
+    <input class="full-width" type="text" id="divesite" value=""
       placeholder="(e.g. Al Arouk)"/>
     <br />
     <label for="region">Region:</label>
-    <input type="text" id="region" value=""
+    <input class="full-width" type="text" id="region" value=""
       placeholder="(e.g. Egypt)" />
     <br />
     <label for="depth">Max depth (feet):</label>
-    <input type="number" id="depth" value="" />
+    <input class="half-width" type="number" id="depth" value="" />
     <br />
     <label for="bottomtime">Bottom time (minutes):</label>
-    <input type="number" id="bottomtime" value="" />
+    <input class="half-width" type="number" id="bottomtime" value="" />
     <br />
     <label>
-      <input type="checkbox" id="nightdive"/>
+      <input class="indent" type="checkbox" id="nightdive"/>
       Nightdive
     </label>
     <br />
     <label for="comment">Comment:</label>
+    <textarea class="full-width" rows="3" id="comment"></textarea>
     <br />
-    <textarea rows="3" id="comment"></textarea>
-    <br />
-    <input type="submit" value="Save" />
+    <input class="indent" type="submit" value="Save" />
   </form>
 </body>
 </html>
